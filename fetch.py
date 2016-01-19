@@ -125,7 +125,10 @@ def run(result_dir, index_url):
         #     img.set('src', img.get('src')[1:])
 
     # 组合内容
-    result = ''
+
+    # 添加字符编码声明
+    result = '<head><meta charset="utf-8"/></head>\n'
+
     for p in pages:
         page_heading = html.Element('h%d' % p['ident'])
         page_heading.text = p['title']
@@ -141,19 +144,19 @@ def run(result_dir, index_url):
 
 # ---------------------------- CONFIG START ------------------------------
 
-js = ('lxf_js',
+js = ('js',
       'http://www.liaoxuefeng.com/'
       'wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000')
 
-py2 = ('lxf_py2',
+py2 = ('py2',
        'http://www.liaoxuefeng.com/'
        'wiki/001374738125095c955c1e6d8bb493182103fac9270762a000')
 
-py3 = ('lxf_py3',
+py3 = ('py3',
        'http://www.liaoxuefeng.com/'
        'wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000')
 
-git = ('lxf_git',
+git = ('git',
        'http://www.liaoxuefeng.com/'
        'wiki/0013739516305929606dd18361248578c67b8067c8c017b000')
 

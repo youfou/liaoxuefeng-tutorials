@@ -1,3 +1,9 @@
+# liaoxuefeng-tutorials
+
+廖雪峰制作的 Git, Python 2/3, JavaScript 精品教程，可读性很强。
+
+可惜官方只提供了在线版本，不方便离线阅读，于是写了这个脚本来抓取。
+
 ## 功能简介
 
 从廖雪峰的官方网站获取 Git, Python 2/3, JavaScript 教程，保存为 HTML 格式，可用于制作离线电子书
@@ -14,6 +20,10 @@
 
 * lxml
 * requests
+
+入口脚本：
+
+* fetch.py
 
 ## 重要说明
 
